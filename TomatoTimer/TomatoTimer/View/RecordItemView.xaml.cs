@@ -16,11 +16,11 @@ using System.Windows.Shapes;
 namespace TomatoTimer
 {
     /// <summary>
-    /// Interaction logic for SettingView.xaml
+    /// Interaction logic for Record.xaml
     /// </summary>
-    public partial class SettingView : UserControl
+    public partial class RecordItemView : UserControl
     {
-        public SettingView()
+        public RecordItemView()
         {
             InitializeComponent();
         }
