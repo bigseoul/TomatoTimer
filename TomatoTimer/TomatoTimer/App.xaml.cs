@@ -13,5 +13,6 @@ namespace TomatoTimer
     /// </summary>
     public partial class App : Application
     {
+        private SharedPreference SharedPreference = SharedPreference.Instance;
     }
 }
