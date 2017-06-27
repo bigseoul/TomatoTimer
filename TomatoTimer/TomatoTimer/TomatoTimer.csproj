@@ -103,6 +103,7 @@
     </Compile>
     <Compile Include="Common\Defiens.cs" />
     <Compile Include="Common\SharedPreference.cs" />
+    <Compile Include="DB\DBManager.cs" />
     <Compile Include="View\SettingView.xaml.cs">
       <DependentUpon>SettingView.xaml</DependentUpon>
     </Compile>
