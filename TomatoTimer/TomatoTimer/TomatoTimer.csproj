@@ -85,6 +85,14 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Page Include="View\SettingView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\CounterView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -95,6 +103,12 @@
     </Compile>
     <Compile Include="Common\Defiens.cs" />
     <Compile Include="Common\SharedPreference.cs" />
+    <Compile Include="View\SettingView.xaml.cs">
+      <DependentUpon>SettingView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\CounterView.xaml.cs">
+      <DependentUpon>CounterView.xaml</DependentUpon>
+    </Compile>
     <Compile Include="DB\Base\AMultiOperateQuery.cs" />
     <Compile Include="DB\Base\AMultiQuery.cs" />
     <Compile Include="DB\Base\AOleDbManager.cs" />
@@ -146,7 +160,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="ViewModel\" />
-    <Folder Include="View\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="..\packages\System.Data.SQLite.Core.1.0.105.2\build\net451\System.Data.SQLite.Core.targets" Condition="Exists('..\packages\System.Data.SQLite.Core.1.0.105.2\build\net451\System.Data.SQLite.Core.targets')" />
